@@ -26,4 +26,13 @@ type Mutation{
     addUser(email:String,image:String):User
     addLink(title:String,description:String,url:String,category:String,imageUrl:String):Link
 }
+
+type Edge{
+    cursor:String
+    node:Link
+}
+type PageInfo{
+    endCursor:String
+    hasNextPage:Boolean
+}
 `

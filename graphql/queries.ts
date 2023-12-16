@@ -1,7 +1,7 @@
 import {gql} from "@apollo/client";
 
 export const GET_LINKS = gql`
-    query Links{
+    query Link{
         links {
             id
             title
@@ -11,4 +11,15 @@ export const GET_LINKS = gql`
             category
         }
     }
+`
+
+export const GET_USERS = gql`
+query User{
+    users {
+        id
+        email
+        image
+        role
+    }
+}
 `
